@@ -1,9 +1,10 @@
 /*
  * Student Name: Abdelrahman Mostafa
  * Lab Professor: Neda Nabavi
- * Due Date: ????????????
- * Modified: ????????????
- * Description: ????????????.
+ * Due Date: June 17, 2022
+ * Modified: June 17, 2022
+ * Description: This class is responsible for calculating 
+ * how many varnish coats need for the surface area entered by user.
  */
 
 public class VarnishCalculation {
@@ -12,34 +13,32 @@ public class VarnishCalculation {
 		// no parameter constructor 
 	}
 
-	// initialization 
+	// initialing new instance of the AreaCalculation class
 	private AreaCalculation areaCalculation = new AreaCalculation();
 	
+	// private, class level variables
 	/* NOTES
 	 * 1 can of varnish (1 litre) will coat 46800 square inches of surface. 
 	 */ 
-	// class lever variables
 	private int squareInchesPerCan = 46800;
 	private int numOfVarnishCans; 
 	
-	// method description 
-	// set number of varnish coats 
+	// this is a set method, that sets that number of varnish cans entered by user
 	public void setVarnishCoat(int numOfVarnishCans) {
 		this.numOfVarnishCans = numOfVarnishCans;
 	}
 	
-	// method description 
-	// set diameter
+	// this is a set method, this method sets the diameter value by calling the set diameter method from the AreaCalculation class 
 	public void setDiameter(double diameter) {
 		areaCalculation.setDiameter(diameter);
 	}
 	
-	
 	/* NOTES
-	 * the number of coats of varnish for each table-top
+	 * The program should accept input for the diameter of the table-tops, the number of coats of varnish for each table-top,
+	 * and then output how many of these table-tops can be varnished using one can of varnish.
 	 */
-	// method description 
-	public double calculateNumOfVarnishCans() {
+	// this is a get method, this method calculates the numbers of varnish cans needed -- see below comments to understand the steps needed to do this calculation
+	public double getNumOfVarnishCans() {
 		// get the area
 		double area = areaCalculation.getArea();
 		// divide the square inches per varnish can, by the area
