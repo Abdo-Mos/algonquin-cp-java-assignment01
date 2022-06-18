@@ -23,7 +23,7 @@ public class AreaCalculation {
 	 * Area is: PI * diameter(d)^2 / 4
 	 */
 	private double calculateArea(double d) {
-		final double area = PI * (d * d) / 4;
+		double area = PI * (d * d) / 4;
 		return area;
 	}
 	

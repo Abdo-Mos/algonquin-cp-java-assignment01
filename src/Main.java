@@ -15,7 +15,7 @@ public class Main {
 	public static void main(String[] args) {
 		
 		// initializing new instances 
-		Scanner javaScanner = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 		VarnishCalculation varnishCalculation = new VarnishCalculation();
 		
 		// class level variables 
@@ -24,13 +24,13 @@ public class Main {
 
 		// getting user input for diameter
 		System.out.println("Enter Diameter (inches): ");
-		diameter = javaScanner.nextDouble();
+		diameter = scanner.nextDouble();
 		// setting diameter, see setDiameter method in class VarnishCalculation
 		varnishCalculation.setDiameter(diameter);
 		
 		// getting user input for number of coats needed
 		System.out.println("Enter Coats Needed: ");
-		coats = javaScanner.nextInt();
+		coats = scanner.nextInt();
 		// setting number of coats needed, see setVarnishCoat method in class VarnishCalculation
 		varnishCalculation.setVarnishCoat(coats);
 		
